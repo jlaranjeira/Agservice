@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+
+.form-container {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 400px; 
+    margin-top: 15px;      
+}
+
+.form-add {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #000;
+    font-weight: 600;        
+}
+
+input, select, textarea {
+    padding: 8px;
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    border: 1px solid $soft-color;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.div-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-form{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color:#fff ;
+    font-weight: 500;
+    background-color: darkgreen;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer; 
+    width: 150px; 
+    height: 45px;    
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+}
