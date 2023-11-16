@@ -1,50 +1,41 @@
-import { ChangeEvent, useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../../contexts/Auth/AuthContext";
+
+import { Link } from "react-router-dom";
+import "./login.scss";
 
 export const Login = () => {
-    const auth = useContext(AuthContext);
-    const navigate = useNavigate();
-
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
-    const handleEmailInput = (event: ChangeEvent<HTMLInputElement>) => {
-        setEmail(event.target.value);
-    }
-
-    const handlePasswordInput = (event: ChangeEvent<HTMLInputElement>) => {
-        setPassword(event.target.value);
-    }
-
-    const handleLogin = async () => {
-        if (email && password) {
-            const isLogged = await auth.signin(email, password);
-            if (isLogged) {
-                navigate('/');
-            } else {
-                alert("Não deu certo.");
-            }
-        }
+    
+    const handleClick = () => {
+        <Link to="/"></Link>
     }
 
     return (
-        <div>
-            <h2>Página Fechada</h2>
+        <div className="container-login">
+            <div className="container-Logo">
+                <div className="login-logo">
+                    <img src="agenda_service.png" alt="" />
+                    <p>Organizando seu Negócio</p>
+                </div>
+            </div>
 
-            <input
-                type="text"
-                value={email}
-                onChange={handleEmailInput}
-                placeholder="Digite seu e-mail"
-            />
-            <input
-                type="password"
-                value={password}
-                onChange={handlePasswordInput}
-                placeholder="Digite sua senha"
-            />
-            <button onClick={handleLogin}>Logar</button>
+            <div className="content">
+                <div className="form-login">
+                     <h2>Login</h2>
+
+                    <input
+                        type="text"                               
+                        placeholder="Digite seu e-mail"
+                    />
+                    <input
+                        type="password"                
+                        placeholder="Digite sua senha"
+                    />
+                                        
+                        <button type="submit" className="btn-login" ><Link to="/">Entrar</Link></button>             
+                    
+                </div>
+               
+            </div>
+            
         </div>
     );
 }

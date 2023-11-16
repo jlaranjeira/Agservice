@@ -9,13 +9,13 @@ import {
   RouterProvider,
   Outlet, 
 } from "react-router-dom";
-import Login from "./pages/login/Login_old";
 import "./styles/global.scss"
 import Schedule from "./pages/schedule/index"
 import Client from "./pages/Client/Client";
 import Users from "./pages/Users/Users";
 import Service from "./pages/Service/Service";
 import User from "./pages/User/User";
+import { Login } from "./pages/login";
 
 
 function App() {

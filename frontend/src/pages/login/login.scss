@@ -1,3 +1,119 @@
-.login {
+@import "../../styles/global.scss";
+
+
+.container-login {
+    display: flex;    
+    background-color:#043574;
     
 }
+
+.container-Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 100%;    
+}
+
+.login-logo img{
+    display: flex;
+    flex-direction: column;
+    width: 340px;    
+    align-items: center; 
+}
+
+.login-logo p {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height: 100vh;   
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 320px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #0082ca;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-login input{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4921f;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+
+        .container-login {
+            display: flex;
+            flex-wrap: wrap;           
+            height: 100vh;                   
+        }
+
+        .login-logo{                       
+            height: 100%;
+            padding: 30px;                    
+        }      
+
+        .login-logo img{                       
+            width: 200px;            
+        }
+
+        .login-logo p {
+            text-align: center;            
+            font-size: 12px;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            display: flex;
+            height: 0px;                     
+        }
+
+        .form-login {
+            display: flex;
+            flex-direction: column;                          
+            background-color: #0082ca;
+            border-radius: 10px;
+            padding: 15px;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 80%;
+        }
+    
+}
+
