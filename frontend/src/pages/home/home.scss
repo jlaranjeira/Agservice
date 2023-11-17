@@ -128,8 +128,12 @@
             .despesa {
                 border-radius: 10px;
                 padding: 10px;
-                border: 2px solid #E8F1F4;
-                
+                border: 2px solid #E8F1F4;                
+            }
+            .div-valor-despesas p {
+                color:crimson;
+                font-size: 28px;
+                font-weight: bold;
             }
             .div-logo-receita{
                 
@@ -154,6 +158,12 @@
             }
             .div-logo-despesas h4{
                 margin-top: 20px;
+            }
+
+            .valor-receita p {
+                color:darkgreen;
+                font-size: 28px;
+                font-weight: bold;
             }
 
             .icon-despesa {

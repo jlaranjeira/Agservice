@@ -101,8 +101,8 @@ const Home = () => {
                     <div className="receita">
                         <div className="div-logo-receita">
                             <div className="valor-receita">
-                                <h1>R$</h1>
-                                <h1>500,00</h1>
+                                <h2>R$</h2>
+                                <p>500,00</p>
                             </div>
                             <div className="div-icone-receita">
                                 <img className="logo-receita" src="dinheiro.png" alt="" />
@@ -114,8 +114,8 @@ const Home = () => {
                     
                         <div className="despesa">
                             <div className="div-valor-despesas">
-                                <h1>R$</h1>
-                                <h1>300,00</h1>
+                                <h2>R$</h2>
+                                <p>300,00</p>
                             </div>
                             <div className="div-logo-despesas">
                                 <img className="icon-despesa" src="despesa.png" alt="" />
