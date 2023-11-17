@@ -18,6 +18,7 @@ import User from "./pages/User/User";
 import { Login } from "./pages/login";
 
 
+
 function App() {
 
   const Layout = () => {
@@ -47,7 +48,7 @@ function App() {
     {    
 
       path: "/",
-      element: <Layout />,      
+      element: <Layout />,            
       children:[
         {
           path: "/home",

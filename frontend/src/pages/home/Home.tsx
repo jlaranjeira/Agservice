@@ -24,7 +24,7 @@ const Home = () => {
                     
                     {/*<p className="agendamento" onClick={() => setOpen(!open)}>Agendamento</p>*/}
                     <div className="img-btn-client">
-                    <Link to=".\clients">
+                    <Link to="/clients">
                         <img className="btn-client" src="user.svg" alt="" />
                         Clientes
                     </Link>
@@ -35,7 +35,7 @@ const Home = () => {
             <div className="box box2">
                 <div className="img-btn-client">
                         
-                    <Link to=".\services">
+                    <Link to="/services">
                         <img className="btn-client" src="wrench.svg" alt="" />
                         Serviços
                     
