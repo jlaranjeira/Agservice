@@ -4,10 +4,6 @@ import "./login.scss";
 
 export const Login = () => {
     
-    const handleClick = () => {
-        <Link to="/"></Link>
-    }
-
     return (
         <div className="container-login">
             <div className="container-Logo">
