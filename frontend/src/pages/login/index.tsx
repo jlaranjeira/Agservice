@@ -30,7 +30,7 @@ export const Login = () => {
                         placeholder="Digite sua senha"
                     />
                                         
-                        <button type="submit" className="btn-login" ><Link to="/">Entrar</Link></button>             
+                        <button type="submit" className="btn-login" ><Link to="/home">Entrar</Link></button>             
                     
                 </div>
                
