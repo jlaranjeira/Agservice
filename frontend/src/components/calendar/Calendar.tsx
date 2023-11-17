@@ -84,6 +84,7 @@ function Calendar() {
 
     </div>
   );
+
   function renderEventContent(eventContent: EventContentArg) {
     return (
       <>
@@ -101,8 +102,8 @@ function Calendar() {
       //}       
   };
   
-  function select(info) {
-    alert('Data selecionada: ' +  info.dateStr);
+  function select() {
+    
     {setOpen(!open)} 
   };
 

@@ -1,22 +1,21 @@
 import "../agenda/agendar.scss";
-import FormAdd from "../forrm/Form";
-
 
 interface IModal {
     isOpen: boolean;
     setOpen: (isOpen: boolean) => void;
     title: string;
     
+    
 }
 
-const ModalAgenda = ({ isOpen, setOpen, title }: IModal) => {
+const Modal = ({ isOpen, setOpen, title }: IModal) => {
     if (isOpen){
     return (
         <div className="background">
             
             <div className="modal">
                 <h2>{title}</h2>
-                <FormAdd />
+                    
                 <span className="close" onClick={() => setOpen(!isOpen)}>          X
                 </span>               
             </div>
@@ -27,4 +26,4 @@ const ModalAgenda = ({ isOpen, setOpen, title }: IModal) => {
     }
 };
 
-export default ModalAgenda;
+export default Modal;

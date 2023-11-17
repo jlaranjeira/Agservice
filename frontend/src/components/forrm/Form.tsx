@@ -68,6 +68,8 @@ const FormAdd = () => {
                 {message ? <p>{message}</p> : ""}
 
                 <form className="form-add" onSubmit={addSchedule}>
+
+                    
                     <label>Data</label>
                     <input type="datetime-local" name="start" id="data" onChange={valueInput} value={data.start}/>
                     

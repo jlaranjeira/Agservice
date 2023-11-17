@@ -3,12 +3,13 @@ import { useState, useEffect } from 'react';
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 
+
 type Props = {  
     slug: string;
   };
 
 const FormView = (props: Props) => { 
- 
+
 const {id} = useParams();   
 
 const [data, setData] = useState([])
@@ -52,8 +53,8 @@ const handleClick = () => {
                                 
                     
                         <div className="div-btn-view">
-                            <button className="btn-form-view-edit"  type="submit">Editar</button>
-                            <button className="btn-form-view-close" type="submit" onClick={handleClick}>Fechar</button>  
+                            <button className="btn-form-view-edit" >Editar</button>
+                            <button className="btn-form-view-close"  onClick={handleClick}>Fechar</button>  
                         </div>
 
                     </div>
@@ -65,6 +66,8 @@ const handleClick = () => {
                                            
 
                 </form>
+
+
 
         </div>
     )
