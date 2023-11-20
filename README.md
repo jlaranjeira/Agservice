@@ -57,7 +57,7 @@ ________________________________________________
 ### npm install
 
 O projeto deverá rodar no seguinte endereço: 
-### http://localhost:5000
+### http://localhost:19000
 
 
 # PARA RODAR O PROJETO APP
