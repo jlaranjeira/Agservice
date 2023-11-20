@@ -39,13 +39,36 @@ Na sequência, siga os passos para rodar o PROJETO BACKAND:
 
 # PARA RODAR O PROJETO FRONTEND
 Abrir nova sesssão do Visual Stúdio Code, executar o terminal do editor e Instalar todas as dependencias indicada pelo package.json, caso não tenha sido baixada, com o comando:
-### npm install
+### yarn
 
 Rodar o projeto React 
 ### yarn run dev
 
 Acessar no navegador
 ### http://localhost:5173
+
+Obs.: Para facilitar o acesso, Na tela de login, o email e a senha estão em branco.
+________________________________________________
+
+# PARA RODAR O APP
+
+1 - Abrir o Visual Stúdio Code
+2 - Executar o terminal do editor e Instalar todas as       dependencias indicada pelo package.json, caso não tenha sido baixada com o comando:
+### npm install
+
+O projeto deverá rodar no seguinte endereço: 
+### http://localhost:5000
+
+
+# PARA RODAR O PROJETO APP
+
+Na linha de comando do Editor de codigo digite o comando:
+## expo start
+
+### Para rodar o projeto no celular será necessário a instalação do aplicativo Expo Go.
+
+Obs.: Na tela de login o email e senha estão em branco.
+
 
 
 Trabalho desenvolvido pelo Grupo 16 ADS - CENTRO UNIVERSITÁRIO SENAC Santo Amaro.

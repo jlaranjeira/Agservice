@@ -1,4 +1,4 @@
-import FormView from "../../components/forrm/formview/FormView";
+import FormView from "../../components/forrm/formview/FormView1";
 
 //import "./user.scss";
 

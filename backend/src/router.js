@@ -11,7 +11,7 @@ const userMiddleware = require('./middlewares/userMiddleware');
 
 //Router Clients
 router.get('/clients', clientsController.getAll);
-router.get('/clients/:id', clientsController.getOne);
+router.get('/client/:id', clientsController.getOne);
 router.post('/client', clientsMiddleware.validateFieldNome, clientsController.createClient);
 router.delete('/client/:id', clientsController.deleteClient);
 router.put('/client/:id',

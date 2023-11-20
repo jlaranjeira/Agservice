@@ -41,7 +41,7 @@ const handleClick = () => {
                     {
                         
                         data.map((data, index) => {
-                            return <div className="content-view"key={index}>
+                            return <div className="content-view" key={index}>
                                 <label>Cod: <span>{data.id}</span> </label>
                     
                     

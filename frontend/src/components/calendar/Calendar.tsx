@@ -96,10 +96,10 @@ function Calendar() {
 
   function handleEventClick(clickInfo: EventClickArg) {  
       
-    
-      //if (confirm(`Deseja realmente apagar este registro? '${clickInfo.event.title}'`) == true) {                
-         //clickInfo.event.id
-      //}       
+    console.log(clickInfo.event.id) 
+     // if (confirm(`Deseja realmente apagar este registro? '${clickInfo.event.title}'`) == true) {                
+        
+    // }      
   };
   
   function select() {

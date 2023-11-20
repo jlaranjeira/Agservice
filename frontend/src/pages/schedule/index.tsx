@@ -1,35 +1,85 @@
+import { GridColDef } from "@mui/x-data-grid";
+import DataTable from "../../components/dataTable/DataTable";
+import "../Clients/clients.scss";
 import { useState } from "react";
-import FormAdd from "../../components/forrm/Form";
-import FormView from "../../components/forrm/formview/FormView";
-import ModalAgenda from "../../components/agenda/Agendar";
+import Add from "../../components/add/Add";
+//import { userRows } from "../../data";
+import { useQuery } from "react-query";
+
+const columns: GridColDef[] = [
+    { field: "id", headerName: "ID", width: 90 },
+    
+    {
+      field: "nome",
+      type: "string",    
+      headerName: "Nome",
+      width: 250,
+      
+    },  
+    {
+      field: "email",
+      type: "string",    
+      headerName: "Email",
+      width: 200,
+    },
+    {
+      field: "telefone",
+      type: "string",
+      headerName: "Telefone",
+      width: 200,
+    },
+    {
+        field: "endereco",
+        type: "string",
+        headerName: "Endereço",
+        width: 200,
+      },
+      {
+        field: "msg",
+        type: "string",
+        headerName: "Observação",
+        width: 200,
+      },
+      {
+        field: "start",
+        type: "string",
+        headerName: "Data",
+        width: 200,
+      },
+    
+    
+  ];
 
 const Schedule = () => {
-    const [open, setOpen] = useState<boolean>(false);
-    const [data, setData] = useState({
-        nome: '',
-        email: '',
-        telefone: '',
-        endereco: '',
-        title: '',
-        msg: '',
-        start: ''
-        });
-    return (
+    const [open, setOpen] = useState(false);
 
-        <div className="container-form">
+  // TEST THE API
 
-            
+   const { isLoading, data } = useQuery({
+     queryKey: ["allclients"],
+     queryFn: () =>
+       fetch("http://localhost:3000/clients").then(
+         (res) => res.json()
+       )
+   });
 
-            
-                <FormAdd />
-            
-            
+  return (
+    <div className="client">
+      <div className="info">
+        <h1>Agendamentos</h1>
+        {/*<button onClick={() => setOpen(true)}>Add Novo</button>*/}
+      </div>
+      
+      {/* TEST THE API */}
 
-        </div>
-
-    )
-
-    
+       {isLoading ? (
+        "Loading..."
+      ) : (
+        <DataTable slug="client" columns={columns} rows={data} />
+      )}
+      {open && <Add slug="client" columns={columns} setOpen={setOpen} />}
+    </div>
+  );
 };
 
 export default Schedule;
