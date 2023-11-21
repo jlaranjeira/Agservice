@@ -92,7 +92,7 @@ const FormAdd = () => {
                     <label>Observação</label>
                     <textarea name="msg" rows={3} onChange={valueInput} value={data.msg}></textarea>
                     <div className="div-btn">
-                        <button className="btn-form" type="submit">Enviar</button> 
+                        <button className="btn-form" type="submit">Agendar</button> 
                     </div>
                                            
 

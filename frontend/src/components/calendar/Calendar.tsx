@@ -97,9 +97,9 @@ function Calendar() {
   function handleEventClick(clickInfo: EventClickArg) {  
       
     console.log(clickInfo.event.id) 
-     // if (confirm(`Deseja realmente apagar este registro? '${clickInfo.event.title}'`) == true) {                
+      if (confirm(`Deseja realmente apagar este registro? '${clickInfo.event.title}'`) == true) {                
         
-    // }      
+    }      
   };
   
   function select() {

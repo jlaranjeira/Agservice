@@ -50,7 +50,7 @@ const columns: GridColDef[] = [
     
   ];
 
-const Schedule = () => {
+const Schedules = () => {
     const [open, setOpen] = useState(false);
 
   // TEST THE API
@@ -82,4 +82,4 @@ const Schedule = () => {
   );
 };
 
-export default Schedule;
+export default Schedules;

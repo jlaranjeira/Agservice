@@ -46,7 +46,7 @@ import {
         return (
           <div className="action">
             <Link to={`/${props.slug}/${params.row.id}`}>
-              <img src="/view.svg" alt="Botão editar" title="Visualisar" />
+              <img src="/view.svg" alt="Botão editar" title="Visualizar" />
             </Link>
             <div className="delete" onClick={() => handleDelete(params.row.id)}>
               <img src="/delete.svg" alt="Botão excluir" title="Excluir" />

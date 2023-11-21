@@ -62,7 +62,7 @@ function Cal() {
         selectable={true}
         dayMaxEvents={true}
         eventContent={renderEventContent} // custom render function
-        eventClick={handleEventClick}
+        //eventClick={handleEventClick}
         dateClick={select}
         
         
@@ -91,12 +91,12 @@ function Cal() {
     )
   };
 
-  function handleEventClick(clickInfo: EventClickArg) {    
+  /*function handleEventClick(clickInfo: EventClickArg) {    
         
-      if (confirm(`Deseja realmente apagar este registro? '${clickInfo.event.title}'`) == true) {                
-          clickInfo.event.remove()
+     // if (confirm(`Deseja realmente apagar este registro? '${clickInfo.event.title}'`) == true) {                
+         // clickInfo.event.remove()
       }       
-  };
+  };*/
   
   function select(info) {
     alert('Data selecionada: ' +  info.dateStr);

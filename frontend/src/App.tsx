@@ -10,7 +10,8 @@ import {
   Outlet, 
 } from "react-router-dom";
 import "./styles/global.scss"
-import Schedule from "./pages/schedule/index"
+import Schedules from "./pages/schedules";
+import Schedule from "./pages/Schedule/Schedule";
 import Client from "./pages/Client/Client";
 import Users from "./pages/Users/Users";
 import Service from "./pages/Service/Service";
@@ -67,7 +68,11 @@ function App() {
           element: <Service />
         },
         {
-          path: "/schedule",
+          path: "/schedules",
+          element: <Schedules />
+        },
+        {
+          path: "/schedule:id",
           element: <Schedule />
         },
         {

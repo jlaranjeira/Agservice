@@ -9,7 +9,7 @@ type Props = {
     slug: string;
   };
 
-const FormView = (props: Props) => {
+const AgendaView = (props: Props) => {
   const { id } = useParams();
 
   //Estados do componente
@@ -83,6 +83,8 @@ const FormView = (props: Props) => {
                         <span><strong>Email:</strong>  {data.email}</span>              
                         <span><strong>Telefome:</strong> {data.telefone}</span>        
                         <span><strong>Endereço:</strong> {data.endereco}</span>
+                        <span><strong>Observação:</strong> {data.msg}</span>
+                        <span><strong>Data:</strong> {data.start}</span>
                         
                     </div>
                     );
@@ -113,6 +115,10 @@ const FormView = (props: Props) => {
                         <input type="text" name="telefone" value={data.telefone}/>
                         <label>Endereço:</label>
                         <input type="text" name="endereco" value={data.endereco}/>
+                        <label>Obsercação:</label>
+                        <input type="text" name="msg" value={data.msg}/>
+                        <label>Data:</label>
+                        <input type="text" name="start" value={data.start}/>
                         <button className="btn-update" type="submit">Atualizar</button>
                     </div>
                     );
@@ -143,5 +149,5 @@ const FormView = (props: Props) => {
   );
 };
 
-export default FormView;
+export default AgendaView;
 

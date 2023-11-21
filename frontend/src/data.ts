@@ -29,8 +29,8 @@ export const menu = [
         },
         {
           id: 3,
-          title: "Agendamento",
-          url: "/schedule",
+          title: "Agendamentos",
+          url: "/schedules",
           icon: "agenda.svg",
         },
         {
