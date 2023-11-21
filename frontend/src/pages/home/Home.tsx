@@ -20,13 +20,12 @@ const Home = () => {
        
     return (
         <div className="home">
-            <div className="box box1">              
-                    
-                    {/*<p className="agendamento" onClick={() => setOpen(!open)}>Agendamento</p>*/}
+            <div className="box box1">         
                     <div className="img-btn-client">
                     <Link to="/clients">
                         <img className="btn-client" src="user.svg" alt="" />
-                        Clientes
+                        <p>Clientes</p>
+                        
                     </Link>
                     </div>                                
 
@@ -37,7 +36,8 @@ const Home = () => {
                         
                     <Link to="/services">
                         <img className="btn-client" src="wrench.svg" alt="" />
-                        Serviços
+                        <p>Serviços</p>
+                        
                     
                     </Link>   
                 </div>
@@ -48,7 +48,8 @@ const Home = () => {
                 
                 <div className="img-btn-client">
                     <img className="btn-client" src="writing.svg" alt="" /> 
-                    Ordem de Serviço                   
+                    <p>Ordem de Serviço </p>
+                                      
                 </div>
 
             </div>
